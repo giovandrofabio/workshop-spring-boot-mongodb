@@ -1,11 +1,15 @@
 package com.nelioalves.workshopmongo.domain;
 
 import com.nelioalves.workshopmongo.dto.AuthorDTO;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Document
 public class Post implements Serializable {
